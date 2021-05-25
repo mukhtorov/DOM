@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
+* {
+  /* font-family: "Squada One", cursive; */
+  font-family: Inter;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #222124;
+  --yellow: #f1b301;
+  --purple: #800a7a;
+
+  --title-size: 52px;
+  --product-size: 24px;
+  --description-size: 14px;
+}
