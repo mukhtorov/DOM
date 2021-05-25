@@ -9,7 +9,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 80px;
 }
 
 .nav-items,
@@ -19,7 +19,7 @@
   width: 450px;
   font-family: Inter;
   color: var(--primary-color);
-  font-size: 24px;
+  font-size: 20px;
   white-space: nowrap;
 }
 
@@ -91,4 +91,8 @@
 
 .border {
   border-right: 1px solid white;
+}
+
+.nav-desc {
+  font-size: 14px;
 }
