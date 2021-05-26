@@ -1,6 +1,5 @@
 .body {
   display: flex;
-  height: 70vh;
 }
 
 .body-left {
@@ -8,9 +7,12 @@
 }
 
 .body-right {
+  display: flex;
   flex: 3;
   background-color: var(--purple);
   position: relative;
+  padding-right: 147px;
+  z-index: -1;
 }
 
 .body-title {
@@ -49,6 +51,8 @@
   border-radius: 8px;
   padding: 20px 0 0 20px;
   height: 200px;
+  overflow: hidden;
+  position: relative;
 }
 
 .body-wrapper2 {
@@ -59,6 +63,14 @@
   background-color: var(--purple);
   padding: 20px 0 0 20px;
   height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.set {
+  position: absolute;
+  bottom: -55px;
+  right: -40px;
 }
 
 .sale {
@@ -101,8 +113,70 @@
 
 .burger-img {
   position: absolute;
-  width: 891px;
+  /* width: 891px;
   height: 724px;
   left: -264px;
-  bottom: 40px;
+  bottom: 40px; */
+  width: 691px;
+  height: 524px;
+  left: -264px;
+  top: 143px;
+}
+
+.menu-wrapper {
+  padding: 0 200px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  border-top: 1px solid #979797;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.filter-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 40px;
+  color: #222124;
+  width: 134px;
+  height: 54px;
+  border-radius: 27px;
+  transition: all 0.3s ease-in-out;
+  color: #222124;
+}
+
+.filter-item:hover {
+  background: #f1b301;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-filter {
+  background: #f5f5f5;
+  transition: scale 0 ease-in-out;
+}
+.filter-filter:hover {
+  background: #f5f5f5;
+  color: #222124;
+}
+.filter-filter:active {
+  transform: scale(0.7);
+}
+
+.filter-slider {
+  margin-right: 10px;
+}
+
+.notHot {
+  display: none;
 }

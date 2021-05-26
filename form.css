@@ -1,0 +1,13 @@
+.form {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.input {
+  flex: 1;
+  height: 36px;
+}
+
+.submit {
+  padding: 10px 20px;
+}

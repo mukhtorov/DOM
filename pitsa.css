@@ -1,0 +1,131 @@
+.pitsa-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 63px;
+  padding: 100px 0 30px 0;
+  color: #222124;
+}
+
+.pitsa-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pitsa-card {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  /* flex: 1; */
+  width: 48%;
+  height: 230px;
+  border: 1px solid rgba(53, 52, 52, 0.182);
+  box-sizing: border-box;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.pitsa-card:hover {
+  box-shadow: 1px 1px 4px black;
+}
+
+.pitsa-img {
+  border-radius: 50%;
+}
+
+.pitsa-card-right {
+  height: 100%;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222124;
+  margin-bottom: 15px;
+}
+
+.card-desc {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222124;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  width: 212px;
+}
+
+.flower {
+  margin-left: 10px;
+}
+.count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.price {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  color: #222124;
+}
+
+.plus {
+  width: 50px;
+  height: 50px;
+  background: #f1b301;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus:active {
+  transform: scale(0.8);
+}
+
+.hot {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  left: 45px;
+  background: rgba(255, 255, 255, 0.249235);
+  box-shadow: 2px 7px 20px rgba(238, 39, 68, 0.355086);
+  backdrop-filter: blur(8.15485px);
+
+  border-radius: 25px;
+}
+
+.delete {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  transform: rotate(45deg);
+  font-size: 50px;
+  transition: all 0.3s;
+}
+
+.delete:hover {
+  cursor: pointer;
+  transform: scale(0.8);
+}
