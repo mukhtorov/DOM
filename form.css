@@ -5,9 +5,20 @@
 
 .input {
   flex: 1;
-  height: 36px;
+  /* height: 36px; */
 }
 
 .submit {
   padding: 10px 20px;
+}
+
+.edit-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.edit-form {
+  display: none;
+  flex-direction: column;
 }

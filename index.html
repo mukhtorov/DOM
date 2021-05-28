@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="pitsa.css">
     <link rel="stylesheet" href="form.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Max Way</title>
 </head>
 <body>
@@ -105,13 +105,17 @@
             <div class="pitsa-title">
                 Pitsa
             </div>
-            <div class="form">
-                <input id='rasm' class="input" placeholder="rasm" type="file">
-                <input id='title' class="input" placeholder="title" type="text">
-                <input id='description' class="input" placeholder="description" type="text">
-                <input id='price' class="input" placeholder="price" type="text">
-                <input id='submit' class="submit" placeholder="price" type="submit" value="submit">
-            </div>
+
+<!-- <img id="blah" src="http://placehold.it/180" alt="your image" /> -->
+            <form id="form" class="form">
+                <input for="form" required onchange="readURL(this)" id='rasm' class="input" placeholder="rasm" type="file">
+                <input for="form" required id='title' class="input" placeholder="title" type="text">
+                <input for="form" required id='description' class="input" placeholder="description" type="text">
+                <input for="form" required id='price' class="input" placeholder="price" type="text">
+                <input for="form"  required id='submit' class="submit" placeholder="price" type="submit" value="submit">
+            </form>
+
+
             <div id="pitsa-content" class="pitsa-content">
             </div>
         </div>
@@ -121,9 +125,6 @@
         <div class="contact">contact</div>
         <div class="footer">footer</div>
     </div>
-
-
-
 
     <script src="index.js"></script>
 </body>

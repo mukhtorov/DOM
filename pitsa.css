@@ -19,8 +19,8 @@
   position: relative;
   justify-content: space-around;
   align-items: center;
-  /* flex: 1; */
-  width: 48%;
+  flex: 1;
+  /* width: 48%; */
   height: 230px;
   border: 1px solid rgba(53, 52, 52, 0.182);
   box-sizing: border-box;
@@ -127,5 +127,18 @@
 
 .delete:hover {
   cursor: pointer;
+  transform: scale(0.8);
+}
+
+.edit {
+  position: absolute;
+  top: 35px;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.edit:active {
   transform: scale(0.8);
 }
